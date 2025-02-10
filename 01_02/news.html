@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World of Warship</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="jquery-ui.css">
+    <style>
+        span.location{
+            position: absolute;
+            border-radius: 100%;
+            border: 3px solid white;
+            background: white;
+            height: 20px;
+            width: 20px;
+            transition: 500ms;
+        }
+        span.location:hover{
+            background: black;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="shadow">
+        <img src="" alt="" class="logo">
+        <a href="home.html" class="links">Home</a>
+        <a href="news.html" class="links">News</a>
+        <a href="business.html" class="links">Business</a>
+        <a href="tickets.html" class="links">Tickets</a>
+    </header>
+    <div class="map" style="width: 1500px;height: 450px;display: flex;margin: auto;transform: translateY(150px);">
+        <span class="location" data-location="usa" style="transform: translateX(130px)translateY(200px);"></span>
+        <span class="location" data-location="ussr" style="transform: translateX(550px)translateY(100px);"></span>
+        <span class="location" data-location="japan" style="transform: translateX(630px)translateY(200px);"></span>
+        <span class="location" data-location="france" style="transform: translateX(350px)translateY(170px);"></span>
+        <span class="location" data-location="germany" style="transform: translateX(360px)translateY(160px);"></span>
+        <img src="../01_01/world-map.gif" alt="" class="map" style="width: 750px;">
+        <div class="card" style="width: 750px;">
+            <img src="../01_01/Iowa-Class.jpg" class="card-img-top" style="width: 200px;">
+            <h2 class="card-title">Amercan battleship Iowa</h2>
+            <p class="card-text">The Iowa class was a class of six fast battleships ordered by the United States Navy in 1939 and 1940. They were initially intended to intercept fast capital ships such as the Japanese Kongō class and serve as the 'fast wing' of the U.S. battle line.[3][4] The Iowa class was designed to meet the Second London Naval Treaty's 'escalator clause' limit of 45,000-long-ton (45,700 t) standard displacement. Beginning in August 1942, four vessels, Iowa, New Jersey, Missouri, and Wisconsin, were completed; two more, Illinois and Kentucky, were laid down but canceled in 1945 and 1958, respectively, before completion, and both hulls were scrapped in 1958–1959.  </p>
+        </div>
+    </div>
+    <footer>
+        <div class="medias">
+            <img src="../01_01/1600x1600_wmkn_423662835613_0.jpg" alt="">
+            <img src="../01_01/2023_Facebook_icon.svg" alt="">
+            <img src="../01_01/YouTube_social_white_circle_(2017).svg.png" alt="">
+            <img src="../01_01/Instagram_logo_2022.svg" alt="">
+        </div>
+        <p class="footer">Copyright	© 2024 FIBEX All Rights Reserved</p>
+    </footer>
+</body>
+
+</html>
+<script src="jquery.js"></script>
+<script src="bootstrap.js"></script>
+<script src="jquery-ui.min.js"></script>
+<script>
+    $(".location").click(function () {
+        let location = $(this).data("location")
+        $.get("news.json",function (res) {
+            $(".card-title").text(res[location].title)
+            $(".card-text").text(res[location].text)
+            $("img.card-img-top").attr("src",res[location].img)
+        })
+    })
+</script>

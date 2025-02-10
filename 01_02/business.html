@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World of Warship</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="jquery-ui.css">
+    <style>
+        div.card{
+            width: 800px;
+            transform: translateY(150px);
+            margin: auto;
+        }
+        div.captcha{
+            border: 1px solid #cccc;
+            width: 360px;
+            display: flex;
+            margin: auto;
+            height: 93px;
+        }
+        div.captcha span{
+            line-height: 80px;
+            text-align: center;
+            font-size: 50px;
+            width: 80px;
+            height: 80px;
+            margin: 5px 5px 5px 5px;
+            background: gold;
+            border-radius: 5%;
+        }
+        div.card:hover ~ img.card-img-top{
+            scale: 1.1;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="shadow">
+        <img src="" alt="" class="logo">
+        <a href="home.html" class="links">Home</a>
+        <a href="news.html" class="links">News</a>
+        <a href="business.html" class="links">Business</a>
+        <a href="tickets.html" class="links">Tickets</a>
+    </header>
+    <div class="card" style="transform: translateX(450px) translateY(200px)">
+        <img src="" alt="" class="card-img-top">
+        <div class="card-body">
+            <h2 class="card-title">設計展資訊區</h2>
+            <p class="card-text">;equi2 THOOWAVKQUYEIQWEHLIHQWBJFHKSJ;oasfasdfakdsjfadskjhfas</p>
+        </div>
+    </div>
+    <div class="card" style="transform: translateX(-450px) translateY(150px);">
+        <img src="" alt="" class="card-img-top">
+        <div class="card-body">
+            <h2 class="card-title">作品介紹區</h2>
+            <p class="card-text">
+                l;ajhsdfk,asbkfjskaldjfkas,
+            </p>
+            <button class="btn btn-primary Read-control">Read less (閱讀更少)</button>
+            <p class="card-text reading">
+                alsdiads;hfpdifibadskfqdf
+            </p>
+        </div>
+    </div>
+        <footer>
+            <div class="medias">
+                <img src="../01_01/1600x1600_wmkn_423662835613_0.jpg" alt="">
+                <img src="../01_01/2023_Facebook_icon.svg" alt="">
+                <img src="../01_01/YouTube_social_white_circle_(2017).svg.png" alt="">
+            <img src="../01_01/Instagram_logo_2022.svg" alt="">
+        </div>
+        <p class="footer">Copyright	© 2024 FIBEX All Rights Reserved</p>
+    </footer>
+</body>
+
+</html>
+<script src="jquery.js"></script>
+<script src="bootstrap.js"></script>
+<script src="jquery-ui.min.js"></script>
+<script>
+    $(".Read-control").click(function () {
+        const card = $(this).closest("div.card-body")
+        const text = card.find("p.reading")
+        const btn = $(this)
+        if (btn.text() == "Read less (閱讀更少)") {
+            btn.text("Read more (閱讀更多)")
+        } else {
+            btn.text("Read less (閱讀更少)")
+        }
+        $(text).slideToggle()
+    })
+</script>
