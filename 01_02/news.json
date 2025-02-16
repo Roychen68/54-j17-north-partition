@@ -1,27 +1,27 @@
 {
-    "germany":{
-        "img":"../01_01/Bundesarchiv_Bild_193-04-1-26,_Schlachtschiff_Bismarck.jpg",
-        "title":"German battleship Bismarck",
-        "text":"Bismarck was the first of two Bismarck-class battleships built for Nazi Germany's Kriegsmarine. Named after Chancellor Otto von Bismarck, the ship was laid down at the Blohm & Voss shipyard in Hamburg in July 1936 and launched in February 1939. Work was completed in August 1940, when she was commissioned into the German fleet. Bismarck and her sister ship Tirpitz were the largest battleships ever built by Germany, and two of the largest built by any European power."
+    "usa" :{
+        "img": "./img/Iowa-Class.jpg",
+        "title": "IOWA",
+        "text": "406mm main battery nice 👍"
     },
-    "japan":{
-        "img":"../01_01/thediplomat_2014-06-11_16-08-14.jpg",
-        "title":"Japanese battleship Yamato",
-        "text":"Yamato (Japanese: 大和, named after the ancient Yamato Province) was the lead ship of her class of battleships built for the Imperial Japanese Navy (IJN) shortly before World War II. She and her sister ship, Musashi, were the heaviest and most powerfully armed battleships ever constructed, displacing nearly 72,000 tonnes (71,000 long tons) at full load and armed with nine 46 cm (18.1 in) Type 94 main guns, which were the largest guns ever mounted on a warship."
+    "japan" :{
+        "img": "./img/thediplomat_2014-06-11_16-08-14.jpg",
+        "title": "YAMATO",
+        "text": "436mm main battery that was soo toxic"
     },
-    "usa":{
-        "img":"../01_01/Iowa-Class.jpg",
-        "title":"Amercan battleship Iowa",
-        "text":"The Iowa class was a class of six fast battleships ordered by the United States Navy in 1939 and 1940. They were initially intended to intercept fast capital ships such as the Japanese Kongō class and serve as the 'fast wing' of the U.S. battle line.[3][4] The Iowa class was designed to meet the Second London Naval Treaty's 'escalator clause' limit of 45,000-long-ton (45,700 t) standard displacement. Beginning in August 1942, four vessels, Iowa, New Jersey, Missouri, and Wisconsin, were completed; two more, Illinois and Kentucky, were laid down but canceled in 1945 and 1958, respectively, before completion, and both hulls were scrapped in 1958–1959."
+    "german" :{
+        "img": "./img/Bundesarchiv_Bild_193-04-1-26,_Schlachtschiff_Bismarck.jpg",
+        "title": "Bismark",
+        "text": "bruh a german battle ship with strong secondary canon"
     },
-    "ussr":{
-        "img":"../01_01/bb_marat.jpg",
-        "title":"Russian battleship Petropavlovsk (1911)",
-        "text":"Petropavlovsk (Russian: Петропавловск) was the third of the four Gangut-class dreadnoughts built before World War I for the Imperial Russian Navy, the first Russian class of dreadnoughts. She was named after the Russian victory in the siege of Petropavlovsk during the Crimean War. The ship was completed during the winter of 1914–1915, but was not ready for combat until mid-1915. Her role was to defend the mouth of the Gulf of Finland against the Germans, who never tried to enter, so she spent her time training and providing cover for minelaying operations."
+    "france" :{
+        "img": "./img/912073iv0NL.jpg",
+        "title": "Jean Bart",
+        "text": "I hate that WG make it too op"
     },
-    "france":{
-        "img":"../01_01/912073iv0NL.jpg",
-        "title":"French battleship Jean Bart (1940)",
-        "text":"Jean Bart was a French fast battleship, the second and final member of the Richelieu class. Built as a response to the Italian Littorio class, the Richelieus were based on their immediate predecessors of the Dunkerque class with the same unconventional arrangement that grouped their main battery forward in two quadruple gun turrets. They were scaled up to accommodate a much more powerful main battery of eight 380 mm (15 in) guns (compared to the 330 mm (13 in) guns of the Dunkerques), with increased armor to protect them from guns of the same caliber."
+    "ussr" :{
+        "img": "./img/bb_marat.jpg",
+        "title": "Marta",
+        "text": "USSR tradition ugly ship"
     }
 }
