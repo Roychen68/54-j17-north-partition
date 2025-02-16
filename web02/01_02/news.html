@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>world of warship</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="jquery-ui.css">
+</head>
+<style>
+    div.card{
+        width: 1500px;
+        margin: auto;
+        transform: translateY(200px);
+        height: 449px;
+        display: flex;
+        flex-direction: row;
+    }
+    img.map{
+        width: 750px;
+    }
+    div.card-body{
+        width: 750px;
+        height: 449px;
+    }
+    span.location{
+        width: 20px;
+        height: 20px;
+        background: white;
+        border: 2px solid white;
+        transition: 300ms;
+        position: absolute;
+        border-radius: 100%;
+    }
+    span.location:hover{
+        background: black;
+    }
+</style>
+<body>
+    <header class="shadow">
+        <img src="./img/logo.png" alt="" class="logo">
+        <a href="home.html" class="links">Home</a>
+        <a href="news.html" class="links">News</a>
+        <a href="business.html" class="links">Business</a>
+        <a href="tickets.html" class="links">Tickets</a>
+    </header>
+    <div class="card">
+        <span class="location" style="transform: translateX(130px) translateY(200px);" data-location="us"></span>
+        <span class="location" style="transform: translateX(540px) translateY(130px);" data-location="ussr"></span>
+        <span class="location" style="transform: translateX(630px) translateY(190px);" data-location="japan"></span>
+        <span class="location" style="transform: translateX(348px) translateY(170px);" data-location="german"></span>
+        <span class="location" style="transform: translateX(362px) translateY(160px);" data-location="france"></span>
+            <img src="./img/world-map.gif" alt="" class="map">
+            <div class="card-body">
+                <img src="./img/Iowa-Class.jpg" style="height: 200px;">
+                <h2 class="card-title">IOWA</h2>
+                <p class="card-text">406mm main battery nice 👍</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="medias">
+            <img src="./img/2023_Facebook_icon.svg" alt="">
+            <img src="./img/1600x1600_wmkn_423662835613_0.jpg" alt="">
+            <img src="./img/Instagram_logo_2022.svg" alt="">
+            <img src="./img/YouTube_social_white_circle_(2017).svg.png" alt="">
+        </div>
+        <p>Copyright © 2024 FIBEX All Rights Reserved</p>
+    </footer>
+</body>
+</html>
+<script src="jquery.js"></script>
+<script src="bootstrap.js"></script>
+<script>
+    $("span.location").click(function () {
+        let country = $(this).data("location");
+        $.get("news.json",function (res) {
+            $("h2.card-title").text(res[country].title)
+            $("p.card-text").text(res[country].text)
+            $("div.card-body img").attr("src",res[country].img)
+        })
+    })
+</script>
