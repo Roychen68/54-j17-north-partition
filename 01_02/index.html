@@ -3,63 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>world of warship</title>
+    <title>2025 國際交響樂團演奏會(ISOC)</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="jquery-ui.css">
 </head>
 <style>
     div.card{
-        width: 500px;
+        width: 700px;
         margin: auto;
-        transform: translateX(500px) translateY(-100px);
+        display: flex;
+        flex-direction: row;
+        transform: translateY(180px);
+    }
+    div.card img{
+        width: 450px;
     }
 </style>
 <body>
     <header class="shadow">
-        <img src="./img/logo.png" alt="" class="logo">
+        <img src="./img/logo.png" class="logo" alt="">
+        <h1 id="site-title">2025 國際交響樂團演奏會(ISOC)</h1>
         <a href="home.html" class="links">Home</a>
         <a href="news.html" class="links">News</a>
-        <a href="business.html" class="links">Business</a>
+        <a href="performance.html" class="links">Performance</a>
         <a href="tickets.html" class="links">Tickets</a>
+        <a href="search.html" class="links">Search</a>
     </header>
-    <div class="carousel slide" id="slide" data-ride="carousel">
+    <h1 class="title">Home</h1>
+    <div class="carousel slide" id="carousel" data-interval="1500" data-ride="carousel">
         <ul class="carousel-indicators">
-            <li data-target="#slide" data-slide-to="0" class="active"></li>
-            <li data-target="#slide" data-slide-to="1"></li>
-            <li data-target="#slide" data-slide-to="2"></li>
+            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel" data-slide-to="1"></li>
+            <li data-target="#carousel" data-slide-to="2"></li>
         </ul>
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="./img/maxresdefault.jpg" alt="">
                 <div class="carousel-caption">
-                    <h4>1</h4>
-                    <p>14.0更新</p>
+                    <h4 class="card-title">first title</h4>
+                    <p class="card-text">first text</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="img/world-of-warships-1k7yh.jpg" alt="">
+                <img src="./img/Tirpitz_Brandenburg_Bismarck_Art_key-artwork_1920x1080_WG_Spb_WoWSL_Logo.jpg" alt="">
                 <div class="carousel-caption">
-                    <h4>2</h4>
-                    <p>wows</p>
+                    <h4 class="card-title">second title</h4>
+                    <p class="card-text">second text</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="img/Tirpitz_Brandenburg_Bismarck_Art_key-artwork_1920x1080_WG_Spb_WoWSL_Logo.jpg" alt="">
+                <img src="./img/world-of-warships-1k7yh.jpg" alt="">
                 <div class="carousel-caption">
-                    <h4>3</h4>
-                    <p>wows legend</p>
+                    <h4 class="card-title">third title</h4>
+                    <p class="card-text">third text</p>
                 </div>
             </div>
+            <button class="carousel-control-prev" data-target="#carousel" data-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+            <button class="carousel-control-next" data-target="#carousel" data-slide="next"><span class="carousel-control-next-icon"></span></button>
         </div>
-        <button class="carousel-control-prev carousel-control" data-target="#slide" data-slide="prev"></span><span class="carousel-control-prev-icon"></span></button>
-        <button class="carousel-control-next carousel-control" data-target="#slide" data-slide="next"></span><span class="carousel-control-next-icon"></span></button>
     </div>
     <div class="card">
-        <img src="./img/maxresdefault.jpg" alt="" class="card-img-top">
-        <div class="card-body">
-            <h1>adfasdfasdf</h1>
-            <p>afdasd'lfiqwkefqergnkoewipfnuewinrwoeikqrenbhgiujo</p>
+        <div class="row no-gutters">
+            <div class="col-md-8">
+                <img src="./img/maxresdefault.jpg" alt="">
+            </div>
+            <div class="col-md-4">
+                <div class="card-body">
+                    <h1>adfasdfasdf</h1>
+                    <p>afdasd'lfiqwkefqergnkoewipfnuewinrwoeikqrenbhgiujoasdfadf;ajds;fldasj</p>
+                </div>
+            </div>
         </div>
     </div>
     <footer>

@@ -5,22 +5,33 @@ body {
     background: whitesmoke !important;
 }
 
+h1.title{
+    transform: translateY(130px);
+    width: 300px;
+    text-align: center;
+    font-size: 70px;
+    margin: auto;
+}
+
 header {
     width: 1920px;
     height: 100px;
     position: fixed;
     top: 0;
     background: white;
+    display: flex !important;
+    flex-direction: row;
 }
-
+header h1{
+    margin-left: 50px;
+    line-height: 100px;
+}
 footer {
     width: 1920px;
     height: 100px;
     position: fixed;
     bottom: 0;
     background: goldenrod;
-    transform: translateY(70px);
-    filter: opacity(0.5);
     text-align: center;
 }
 
@@ -30,18 +41,19 @@ div.medias img {
 }
 
 img.logo {
-    height: 100px;
-    transform: translateY(-17px);
+    height: 80px;
+    margin: 5px;
 }
 
 a.links {
-    width: 200px;
-    height: 100px;
+    /* width: 180px;
+    height: 100px; */
+    margin: 0 20px 0 20px;
     display: inline-block;
     text-align: center;
     line-height: 100px;
     color: goldenrod;
-    font-size: 50px;
+    font-size: 40px;
     transition: 200ms;
 }
 
@@ -54,11 +66,13 @@ a.links:hover {
 div.carousel {
     width: 800px;
     margin: auto;
-    transform: translateY(200px) translateX(-300px);
+    transform: translateY(150px);
+    border-radius: 30px;
 }
 
 div.carousel-item img {
     width: 800px;
+    border-radius: 30px;
 }
 
 div.carousel-caption {
@@ -79,4 +93,13 @@ div.carousel {
 
 *:is(div.card, div.carousel):hover {
     box-shadow: 10px 0 10px rgba(0, 0, 0, 0.7);
+}
+
+@keyframes spin {
+    from {
+        rotate: 0deg;
+    }
+    to {
+        rotate: 360deg;
+    }
 }
